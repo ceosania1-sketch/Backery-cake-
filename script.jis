@@ -844,3 +844,10 @@ window.addEventListener("load", function () {
 });
 
         modal.innerHTML = 
+setTimeout(() => {
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+        loader.remove();
+    }
+}, 3000);

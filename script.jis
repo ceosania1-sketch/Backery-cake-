@@ -828,6 +828,19 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.appendChild(modal);
 
         }
+// Loading screen
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const loader = document.getElementById("loader");
 
+        if (loader) {
+            loader.classList.add("hide");
+
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 500);
+        }
+    }, 2500); // 2.5 seconds
+});
 
         modal.innerHTML = 
